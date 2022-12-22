@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap{
+            border: 1px solid #777;
+            width: 800px;
+            margin: 0 auto;
+
+            padding: 10px;
+
+            position: relative;
+        }
+
+        .wrap-img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .wrap-img img {width: 50px;}
+
+        .wrap-content {
+            padding-left: 70px;
+            overflow: hidden;
+        }
+
+        .wrap-content .left{float: left;}
+        .wrap-content .right{float: right;}
+
+        .wrap-content textarea{
+            width: 100%;
+            height: 150px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .left input {display: block;}
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="wrap"><!-- margin: 0 auto -->
+        <div class="wrap-img"><!-- 포지션 -->
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+
+        <div class="wrap-content"><!-- 패딩left -->
+            <textarea></textarea>
+            <div class="left"><!-- float: left -->
+                <input type="text">
+                <input type="text">
+            </div>
+            <button type="button" class="right">등록</button> <!-- float: right -->
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="wrap-img"><!-- 포지션 -->
+            <img src="img/bgimg.png" alt="물고기">
+        </div>
+
+        <div class="wrap-content">
+            <div class="left">
+                <p style="margin: 0;"><strong>제목</strong></p>
+                <p style="margin: 0;"><small>내용</small></p>
+            </div>
+
+            <button type="button" class="right">삭제</button>
+            <button type="button" class="right">수정</button>
+        </div>
+    </div>
+
+</body>
+</html>

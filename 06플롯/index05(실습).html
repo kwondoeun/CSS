@@ -7,15 +7,111 @@
     <title>Document</title>
 
     <style>
+        .l {
+            overflow: hidden;
+            width: 1020px;
+            margin: 0 auto;
 
+        }
+
+        .list{
+            float: left;
+            width: 480px;
+            height: 310px;
+            border: 1px solid #777;
+        }
+        .list .inner{
+            float: left;
+            width: 33.3333%;
+            height: 50.0000%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .inner2{
+            float: left;
+            width: 236px;
+            height: 310px;
+            margin-left: 8px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .inner3{
+            float: left;
+            width: 280px;
+            height: 310px;
+            margin-left: 8px;
+            border: 1px solid #777;
+            box-sizing: border-box;
+        }
+        .inner3 .in {
+            height: 50.0000%;
+            border: 1px solid #777;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            text-align: center;
+        }
+        .inner3 .in .left{
+            font-size: 10px;
+            float: left;
+            padding: 50px 0px 7px;
+        }
+        .inner3 .in .right{
+            font-size: 10px;
+            float: right;
+            padding: 50px 0px 7px;
+        }
+        .inner3 .in .btn-wrap{
+            background-color: #19ce60;
+            width: 100%;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300px;
+            padding: 10px 30px;
+            cursor: pointer;
+            text-decoration: none;
+        }
     </style>
 
 </head>
 <body>
+    <div class="l">
+        <div class="list">
+            <div class="inner">
+                사진(너비 33.3333%, 높이 155px)
+            </div>
+            <div class="inner">
+                사진
+            </div>
+            <div class="inner">
+                사진
+            </div>
+            <div class="inner">
+                사진
+            </div>
+            <div class="inner">
+                사진
+            </div>
+            <div class="inner">
+                사진
+            </div>
+        </div>
 
-    <div>
+        <div class="inner2">
+            이미지영역: 236px, 높이 310px, 왼쪽마진 8px
+        </div>
         
+        <div class="inner3">
+            <div class="in">
+                너비:280px; 왼쪽마진 8px
+                <span class="left">멜론을 더 안전하게 이용하세요</span>
+                <span class="right">회원가입</span>
+                <button type="button" class="btn-wrap">로그인</button>
+            </div>
+            <div class="in">      
+            </div>
+
+        </div>
     </div>
-    
 </body>
 </html>

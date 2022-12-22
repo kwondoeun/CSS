@@ -1,0 +1,104 @@
+
+/* 
+마진: 윤곽기준 바깥여백
+      겹침
+      컨텐츠의 밖으로
+      상자를 정가운데로 보내고 싶으면 margin:0 auto;
+
+패딩: 겹치지 않음
+      컨텐츠의 안으로
+
+*/
+* {margin: 0; padding: 0;}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    background-image: url('img/bg.png');
+}
+
+header .logo {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.menu {
+    background-color: black; 
+    text-align: center; 
+    width: 100%;
+}
+
+.menu li {
+    display: inline-block; /* 태그를 inline-block 형식으로 지정 */
+    padding: 20px;
+}
+
+
+.menu li:hover { /* 마우스를 올린 태그를 선택 */
+    background-color: #4d4d4d;
+}
+
+.menu li a {
+    text-decoration: none; /* 텍스트에 줄 표시, none속성이 주로 사용*/
+    color: white; 
+    font-weight: 800; /* 폰트의 굵기 설정 */
+}
+
+.slider {
+    background: white;
+}
+
+.slider ul {
+    width: 960px; 
+    margin: 0 auto; 
+    overflow: hidden; /* 일정 공간에 글들이 넘치는 것을 방지 */
+}
+
+.slider ul li {
+    text-align: center;
+    width: 25%; 
+    margin: 40px 0; 
+    float: left; /* 태그를 왼쪽에 붙임(부모에 overflow: hidden 붙여줌) */
+    box-sizing: border-box;
+}
+
+section {
+    width: 700px; 
+    /* position 속성은 반드시 다음 스타일 속성(top, botton, left, right)과 함께 사용 */
+    margin: 0 auto; 
+    /* position: relative; 가 있는 위치 기준으로 올라가게 됨 */
+    position: relative;
+}
+
+section .left {
+    /* 
+        박스레이아웃(position): 화면을 기준으로 절대적 위치 좌표 설정
+        position absolute를 적용하면 부모에 relative가 들어갑니다. (들어가지 않으면 위치가 body기준이 됨)
+        1. 자식요소에 absolute를 사용하면 부모요소의 relative를 넣어줌
+        2. position을 적용하면 top, bottom중 하나, left, right중에 하나로 위치를 조정
+     */
+    position: absolute;
+    top: 0; 
+    left: -220px;
+}
+
+section .right {
+    position: absolute;
+    top: 0; 
+    right: -220px;
+}
+
+.top {
+    width: 50px;
+    height: 50px; 
+    background: #c13333;
+    /* 스크롤을 따라다님, 화면을 기준으로 절대적 위치 좌표 설정 */
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center; /* 텍스트 수평정렬에 이용(블록태그) */
+    line-height: 50px; /* (줄간격)height와 line-height를 동일하게 맞추면 문단이 수평 가운데 정렬 */
+}
