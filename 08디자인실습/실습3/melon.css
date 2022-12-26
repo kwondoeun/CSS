@@ -188,23 +188,20 @@ img {max-width: 100%; height: auto;}
     margin-top: 10px;
 }
 
-#section .main_banner {
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 1008px;
-}
-
-
-.m0 {
-    margin-top: 10px;
-    padding: 0;
-    list-style: none;
-}
-
-
 #section .hot_issue {
     width: 702px;
     float: left;
+}
+
+#section .hot_issue h4 {
+    margin-top: 10px;
+    border-bottom: 1px solid #777;
+    padding: 5px 0;
+} 
+
+#section .hot_issue h4 span {
+    font-size: 11px;
+    color: #999;
 }
 
 #section .hot_issue ul {
@@ -212,23 +209,23 @@ img {max-width: 100%; height: auto;}
     
 }
 
-#section .hot_issue .margin0{
-    margin-left: 0;
-}
-
 #section .hot_issue ul li {
     float: left;
     margin: 16px 0 0 16px;
 }
 
-#section .hot_issue h4 {
-    border-bottom: 1px solid #999;
-    padding: 5px 0;
-} 
+.m0 {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
 
-#section .hot_issue h4 span {
-    font-size: 11px;
-    color: #777;
+#section .hot_issue .margin0{
+    margin-left: 0;
+}
+
+.hot_issue .inner a>span {
+    margin-top: 5px;
 }
 
 .hot_issue .inner .title {
@@ -253,6 +250,11 @@ img {max-width: 100%; height: auto;}
     color: #777;
 }
 
-.hot_issue .inner a>span {
-    margin-top: 5px;
+#section .main_banner {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 1008px;
 }
+
+
+
