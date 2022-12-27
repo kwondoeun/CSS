@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {background-color: yellow; padding: 10px; height: 500px; }
+        .box .item {background-color: green; width: 50px; height: 50px; margin: 10px;}
+
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+
+            /* 주축 정렬 */
+            /* 아이템 사이균등 */
+            /* justify-content: space-around; */
+            /* 양끝은 붙이고 사이균등 */
+            /* justify-content: space-between; */
+            /* 양끝과 아이템 사이균등  */
+            justify-content: space-evenly;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h3>justify-content(주축정렬)</h3>
+
+    <div class="container box">
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+        <div class="item">hello</div>
+    </div>
+
+
+
+    <hr>
+    <h3>align-item(교차축정렬 - 한줄일때)</h3>
+
+    <style>
+        .box {background-color: yellow; padding: 10px; height: 500px; }
+        .box .item2 {background-color: green; width: 50px; margin: 10px; height: 50px;}
+
+        .container2 {
+            display: flex;
+            /* 교차축 정렬 */
+            /* item 높이가 고정이면 안됩니다. */
+            /* align-items: stretch; */ /* 잡아당김 */
+            /* align-items: flex-start; */ /* 수직 위 */
+            /* align-items: flex-end; */ /* 수직 아래 */
+            /* align-items: center; */ /* 수직 중앙 */
+            align-items: baseline; /* 아이템의 문자들 기준으로 수직정렬 */
+
+        }
+    </style>
+
+
+    <div class="container2 box">
+        <div class="item2" style="line-height: 50px;">hello</div> <!-- 가운데 들어가는 문자기준으로 붙여줌 -->
+        <div class="item2" style="line-height: 70px;">hello</div>
+        <div class="item2">hello</div>
+        <div class="item2">hello</div>
+    </div>
+
+
+
+    <hr>
+    <h3>align-content (교차축정렬 - 두 줄 이상)</h3>
+
+    <style>
+        .box {background-color: yellow; padding: 10px; height: 500px; width: 300px;}
+        .box .item3 {background-color: green; width: 50px; margin: 10px; height: 50px;}
+
+        .container3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 교차축 정렬 - 두줄 이상 */
+            /* item높이가 없어야 함 */
+            /* align-content: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-around; */ /* 줄단위로 균등 분할 */
+            align-content: space-between;
+        }
+    </style>
+
+
+    <div class="container3 box">
+        <div class="item3">1</div> 
+        <div class="item3">2</div>
+        <div class="item3">3</div>
+        <div class="item3">4</div>
+        <div class="item3">5</div> 
+        <div class="item3">6</div>
+        <div class="item3">7</div>
+        <div class="item3">8</div>
+        <div class="item3">9</div>
+        <div class="item3">10</div>
+    </div>
+
+
+
+
+
+</body>
+</html>
